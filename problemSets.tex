@@ -7,37 +7,44 @@
 \usepackage{commath}
 \usepackage{enumitem}
 \usepackage{siunitx}
+\usepackage{parskip}
 
 \newtheorem{p}{}[section]
 \title{ASTR 500: The Physics of Astrophysics}
 \author{Juan Guerra}
 \date{Fall 2018}
-
-%qTemplate
-	% \begin{p}
-	% 	\textbf{TOPIC}
-
-	% 	\noindent
-	% 	QUESTION
-	% \end{p}
-
 \begin{document}
 
 \maketitle
 
 \section{Problem Set 1}
-	\begin{p}
-		\textbf{Apparent magnitude of a supernova (2 pts)}
+	
+	\textbf{1. Apparent magnitude of a supernova}
+	
+    	The absolute magnitude of a start in the galaxy M81 (distance 3.6 Mpc) is $M=6.$ It explodes as a supernova, and becomes $10^{9.5}$ times brighter. What is the apparent magnitude of the supernova?
+	
+    \textit{answer:}
+    
+        relationship between relative magnitude of two objects:
+        
+        $m_{1}-m_{2}=2.5 \, log_{10}(\frac{l_{1}}{l_{2}})$
+        
+        relation between apparent magnitude and absolute magnitude:
+        
+        $m-M = 5\, log_{10}\frac{d}{10}$
+        
+        find the apparent magnitude of the star before its a super nova
+        
+        $m_{1}=6+5\,log_{10}(\frac{3.6 x 10^{6}}{10})\hfill m_{1}=33.7815$
+        
+        apparent magnitude of star once its  a supernova
+       
+        $m_{2}= m_{1}-\textbf{} 2.5\, log_{10}(\frac{10^{9.5}}{1})\hfill \textbf{}m_{2}= 10.03$
+	
+	
+	\textbf{2. Fourier Transform of the step function}
 
-		\noindent
-		The absolute magnitude of a start in the galaxy M81 (distance 3.6 Mpc) is $M=6.$ It explodes as a supernova, and becomes $10^9.5$ times brighter. What is the apparent magnitude of the supernova?
-	\end{p}
-
-	\begin{p}
-		\textbf{Fourier Transform of the step function (3 pts)}
-
-		\noindent
-		Find the fourier transform  of the function $f(t)$ define as:
+		Find the Fourier transform  of the function $f(t)$ define as:
 		\begin{equation}
 		  f(t) =
 		  \begin{cases}
@@ -45,25 +52,23 @@
 		   0 & \text{otherwise} \\
 		  \end{cases}
 		\end{equation}
-	\end{p}
+	
 
-	\begin{p}
+	
 		\textbf{Fourier Transform of irregularly sampled data (5 pts)}
-
-		\noindent
+		
 		The time series of energy emitted by a variable astronomical source is give by:
 		\begin{equation}
 			f(t)=a_{1}cos(\omega_{1}t -\delta_{1})
 		\end{equation}
-		Find the fourier transform of this function if the signal is detected with gaps. That is, it is observed from time $t=0$ to $t=T$ and then re-obseved after 3 nights (after an elapsed time $t_{0}$) from $t_{0}$ to $t_{0}+T$ Plot the power spectrum of this source. Also show how the power spectrum changes as the sampling gap $t_{0}$ is increased to $1.5T$ and $2T.$
+		Find the Fourier transform of this function if the signal is detected with gaps. That is, it is observed from time $t=0$ to $t=T$ and then re-observed after 3 nights (after an elapsed time $t_{0}$) from $t_{0}$ to $t_{0}+T$ Plot the power spectrum of this source. Also show how the power spectrum changes as the sampling gap $t_{0}$ is increased to $1.5T$ and $2T.$
 
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Radiation from nearly isotropic sources (5 pts)}
+	
+	\textbf{3. Radiation from nearly isotropic sources}
 
-		\noindent
-		When the radiation field is very nearly isotropic, we can expand the intensity $I(\theta)$ in a taylor series about $\theta =0$ as follows: 
+		When the radiation field is very nearly isotropic, we can expand the intensity $I(\theta)$ in a Taylor series about $\theta =0$ as follows: 
 		\begin{equation}
 			I(\theta)= I_{0} + I_{1} cos(\theta) + ...
 		\end{equation}
@@ -71,13 +76,12 @@
 		\begin{equation}
 			\abs{F^{in}_{\nu}} = \abs{F^{out}_{\nu}} = \pi I_{\nu}
 		\end{equation}
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Radiation from nearly isotropic sources (5 pts)}
+	
+	\textbf{4. Radiation from nearly isotropic sources}
 
-		\noindent
-		When the radiation field is very nearly isotropic, we can expand the intensity $I(\theta)$ in a taylor series about $\theta =0$ as follows: 
+		When the radiation field is very nearly isotropic, we can expand the intensity $I(\theta)$ in a Taylor series about $\theta =0$ as follows: 
 		\begin{equation}
 			I(\theta)= I_{0} + I_{1} cos(\theta) + ...
 		\end{equation}
@@ -85,10 +89,8 @@
 		\begin{equation}
 			\abs{F^{in}_{\nu}} = \abs{F^{out}_{\nu}} = \pi I_{\nu}
 		\end{equation}
-	\end{p}
-
-	\begin{p}
-		\textbf{Energy density of radiation from a central source (10 pts)}
+	
+	\textbf{5. Energy density of radiation from a central source}
 		\begin{enumerate}[label=(\alph*)]
 			\item Show that the mean intensity at a distance r from a uniformly bright sphere of radius $R$ is give by:
 			\begin{equation}
@@ -110,48 +112,41 @@
 			\end{itemize}
 			Express your answer both in units of $J m^{-3}$ and in $eV m^{-3}$.
 		\end{enumerate}
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Eddington Atmospheres (5 pts)}
+	
+	\textbf{6. Eddington Atmospheres}
 
 		\noindent
-		Show that the solution to the radiative transfer equation under the eddinton approximation is no self-consistent, i.e. compare the expresssions for $J$ in terms of the flux calculated at the surface with and without making the approximation. 
-	\end{p}
-\newpage
+		Show that the solution to the radiative transfer equation under the Eddington approximation is no self-consistent, i.e. compare the expressions for $J$ in terms of the flux calculated at the surface with and without making the approximation. 
+	
+\newpage %-------------------------------------------------------------------------- 
 \section{Problem Set 2}
-	\begin{p}
-		\textbf{Thermal Broadening}
+	
+	\textbf{1. Thermal Broadening}
+	
+		Calculate the thermal broadening of a line of wavelength 656 nm in  a hydrogen plasma at $10^8 K$. This is the typical temperature in the inner region of a cluster of galaxies- int intra-cluster medium - that glows in the X-rays. 
+	
+    \textbf{2. Relation between Einstein Co-efficients}
 
-		\noindent
-		Calculate the thermal broadening of a line of wavelength 656 nm in  a hydrogen plasma at $10^8 K$. This is the typical temperature in the inner rigion of a cluster of galaxies- int intra-cluster medium - that glows in the X-rays. 
-	\end{p}
-
-	\begin{p}
-		\textbf{Relation between Einstein Co-efficients}
-
-		\noindent
 		Derive the relation between the Einstein coefficients and clearly describe the conditions under which they hold.
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Relation between Einstein Co-efficients}
-
-		\noindent
+	
+	\textbf{3. Relation between Einstein Co-efficients}
+		
 		Derive the relation between the Einstein coefficients and clearly describe the conditions under which they hold.
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{The Saha equation}
+	
+	\textbf{4. The Saha equation}
 
-		\noindent
 		Using the Saha equation determine the degree of ionization of hydrogen in the center of the center of the Sun where the density $\rho = 100 g cm^3$ and the temperature $T=$\SI{1.5e7}{\kelvin}. 
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Differential equations}
+	
+	\textbf{5. Differential equations}
 
-		\noindent
 		Solve the following differential equations using the standard methods.
 		\begin{equation}
 			5y\frac{dy}{dx} +4x =0
@@ -172,14 +167,13 @@
 			\frac{d^2y}{dx^2} +3\frac{dy}{dx} - 13y =0
 		\end{equation}
 
-	\end{p}
+	
 
-	\begin{p}
-		\textbf{Stellar Model}
+	
+	\textbf{6. Stellar Model}
 
-		\noindent
-		For a physics model of a star of mass M and radius R where the density $\rho(r)$ is a linear fuction of radius with constant density $\rho_{0}$ at the center and $\rho=0$ at $r=R$, derive the radial dependence of the mass. What fraction of the total mass is enclosed at half the radius, where $r=\frac{r}{2}$
-	\end{p}
+		For a physics model of a star of mass M and radius R where the density $\rho(r)$ is a linear function of radius with constant density $\rho_{0}$ at the center and $\rho=0$ at $r=R$, derive the radial dependence of the mass. What fraction of the total mass is enclosed at half the radius, where $r=\frac{r}{2}$
+	
 
 
 \end{document}
